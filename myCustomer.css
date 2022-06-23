@@ -1,0 +1,144 @@
+/*Customer css*/
+
+.my-customer-text {
+    font-size: calc(16px + (18 - 16) * ((100vw - 300px) / (1440 - 300)));
+}
+
+.my-customer-child-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.my-customer-parent-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.my-customer-w100 {
+    width: 100%;
+}
+
+.my-customer-w50 {
+    width: 50%;
+}
+
+.my-customer-w25 {
+    width: 25%;
+}
+
+.my-customer-w10 {
+    width: 10%;
+}
+
+.my-customer-df-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.my-customer-herobanner-cover {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.my-customer-herobanner-contain {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.my-customer-herobanner-fixed {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.my-customer-testing-border {
+    border: 1px solid black;
+}
+
+.my-customer-box {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.my-customer-pointer-lock {
+    pointer-events: none;
+}
+
+.my-customer-overflow-hidden {
+    overflow: hidden;
+}
+
+.my-customer-rotate {
+    animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.my-customer-fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.my-customer-fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+/*fill btn, use it with size and color*/
+.my-customer-fill-btn {
+    position: relative;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.my-customer-fill-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 1s ease-in-out;
+}
+
+.my-customer-fill-btn:hover::before,
+.my-customer-fill-btn:focus::before {
+    transform: scaleX(1);
+}
+
+/*active btn*/
+.my-customer-active-btn {
+    background: transparent;
+    border: 1px solid #000000;
+    color: #000000;
+}
+
+.my-customer-active-btn:hover {
+    background: #000000;
+    color: #ffffff;
+}
+
+.my-customer-gradient-text {
+    background-clip: text;
+    color: transparent;
+    /*add background image linear-gradient*/
+}
